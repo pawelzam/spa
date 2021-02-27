@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
+import { Section } from './model/section';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'spa';
+  sections: Array<Section>
+  constructor() {
+    this.sections = <Section[]>environment.sections;
+  }
 }

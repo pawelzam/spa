@@ -3,7 +3,24 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  sections: [
+    {
+      id: "a",
+      name: "Section 1",
+      cssClass: "A"
+    },
+    {
+      id: "b",
+      name: "Section 2",
+      cssClass: "B"
+    },
+    {
+      id: "c",
+      name: "Section 3",
+      cssClass: "C"
+    },
+  ]
 };
 
 /*
