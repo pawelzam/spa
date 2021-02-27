@@ -1,0 +1,13 @@
+<!-- https://medium.com/@tomastrajan/how-to-build-responsive-layouts-with-bootstrap-4-and-angular-6-cfbb108d797b -->
+<div class="full-height section {{section.cssClass}} ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <app-block [text]="section.text" [title]="section.title"></app-block>
+      </div>
+      <div class="col-md-6">
+        <img src="{{section.photoUrl}}">
+      </div>
+    </div>
+  </div>
+</div>

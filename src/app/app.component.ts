@@ -9,7 +9,8 @@ import { Section } from './model/section';
 })
 export class AppComponent {
   title = 'spa';
-  sections: Array<Section>
+  sections: Array<Section>;
+  systemName:string = environment.systemName;
   constructor() {
     this.sections = <Section[]>environment.sections;
   }

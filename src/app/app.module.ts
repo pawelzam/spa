@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SectionComponent } from './section/section.component';
 import { HeaderComponent } from './header/header.component';
+import { BlockComponent } from './block/block.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
       SectionComponent,
-      HeaderComponent
+      HeaderComponent,
+      BlockComponent
    ],
   imports: [
     BrowserModule
