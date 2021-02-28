@@ -1,5 +1,8 @@
-<div class="blurred-box">
-  <h2 [innerHtml]="title"></h2>
+<div class="blurred-box" [style]="block.css">
+  <h2 [innerHtml]="block.title"></h2>
   <div class="separator"><i class="fas fa-air-freshener"></i></div>
-  <div [innerHtml]="text"></div>
+  <div [innerHtml]="safeContent" *ngIf="block.content"></div>
+  <div>
+    <img  *ngFor="let photo of block.photos" [src]="photo.url" [style]="photo.css">
+  </div>
 </div>

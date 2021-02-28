@@ -1,8 +1,12 @@
+import { Block } from "./block";
+import { Photo } from "./photo";
+
 export type Section = {
     id: string;
     name: string;
-    cssClass: string;
+    css: string;
+    blocks: Block[];
     title:string;
     text: string;
-    photoUrl:string;
+    photos:Photo[];
 }
